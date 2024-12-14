@@ -51,7 +51,7 @@ button {
 }
 
 button:hover {
-  background-color: #5bb2c2; /* Slightly darker on hover */
+  background-color: #5bb2c2;
 }
 
 .photo img {
@@ -66,5 +66,36 @@ button:hover {
   margin-top: 10px;
   color: #333;
 }
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
+  .countdown, .portfolio {
+    margin-bottom: 20px;
+  }
 
+  button {
+    width: 100%;
+  }
+
+  .photo img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .container {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  #timer {
+    font-size: 1.5rem;
+  }
+}
